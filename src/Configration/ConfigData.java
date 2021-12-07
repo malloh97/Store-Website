@@ -130,7 +130,7 @@ public class ConfigData implements ISuiteListener {
 	public void ReadData()
 	{
 	
-	 file = new File("C:\\Users\\User\\OneDrive\\Desktop\\My Store Website\\src\\Data\\SensitiveData.properties");
+	 file = new File("C:\\Store Website\\src\\Data\\SensitiveData.properties");
 	 fileInput = null;
 	
 		try
