@@ -26,7 +26,7 @@ public class AddEmail_forNewsletter extends ConfigData {
 		driver.quit();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Add_EmailFor_News()
 	{
 		Email.ScrollToEmailField();

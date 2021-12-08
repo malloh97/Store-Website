@@ -1,56 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="3" failed="1" total="7" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="104897" started-at="2021-12-07T20:55:17Z" finished-at="2021-12-07T20:57:02Z">
+  <suite name="Default suite" duration-ms="93920" started-at="2021-12-08T19:25:24Z" finished-at="2021-12-08T19:26:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="104897" started-at="2021-12-07T20:55:17Z" finished-at="2021-12-07T20:57:02Z">
-      <class name="SanityTest.AddEmail_forNewsletter">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.AddEmail_forNewsletter@1324409e]" name="beforeMethod" is-config="true" duration-ms="16368" started-at="2021-12-07T22:55:17Z" finished-at="2021-12-07T22:55:34Z">
+    <test name="Default test" duration-ms="93920" started-at="2021-12-08T19:25:24Z" finished-at="2021-12-08T19:26:57Z">
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="12507" started-at="2021-12-08T21:25:24Z" finished-at="2021-12-08T21:25:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Add_EmailFor_News()[pri:1, instance:SanityTest.AddEmail_forNewsletter@1324409e]" name="Add_EmailFor_News" duration-ms="70286" started-at="2021-12-07T22:55:34Z" finished-at="2021-12-07T22:56:44Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="CheckFaceBookLink()[pri:1, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckFaceBookLink" duration-ms="4200" started-at="2021-12-08T21:25:36Z" finished-at="2021-12-08T21:25:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckFaceBookLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="692" started-at="2021-12-08T21:25:40Z" finished-at="2021-12-08T21:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="6163" started-at="2021-12-08T21:25:41Z" finished-at="2021-12-08T21:25:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CheckTwitterLink()[pri:2, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckTwitterLink" duration-ms="3625" started-at="2021-12-08T21:25:47Z" finished-at="2021-12-08T21:25:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTwitterLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="657" started-at="2021-12-08T21:25:51Z" finished-at="2021-12-08T21:25:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="7019" started-at="2021-12-08T21:25:51Z" finished-at="2021-12-08T21:25:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CheckYoutubeLink()[pri:3, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckYoutubeLink" duration-ms="3713" started-at="2021-12-08T21:25:58Z" finished-at="2021-12-08T21:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckYoutubeLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="661" started-at="2021-12-08T21:26:02Z" finished-at="2021-12-08T21:26:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="9082" started-at="2021-12-08T21:26:03Z" finished-at="2021-12-08T21:26:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="3042" started-at="2021-12-08T21:26:12Z" finished-at="2021-12-08T21:26:15Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(@class, 'alert alert-success')]"}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e199af84eae2cce099b1f6d1084398f, findElement {using=xpath, value=//p[contains(@class, 'alert alert-success')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54190/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e199af84eae2cce099b1f6d1084398f]]>
+              <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(@class, 'alert alert-success')]"}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e199af84eae2cce099b1f6d1084398f, findElement {using=xpath, value=//p[contains(@class, 'alert alert-success')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54190/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e199af84eae2cce099b1f6d1084398f
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at PageObjectModel.AddEmail_forNewsletter_PO.CheckTheNotification(AddEmail_forNewsletter_PO.java:31)
-	at SanityTest.AddEmail_forNewsletter.Add_EmailFor_News(AddEmail_forNewsletter.java:37)
+              <![CDATA[java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -77,27 +88,174 @@ Session ID: 1e199af84eae2cce099b1f6d1084398f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Add_EmailFor_News -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SanityTest.AddEmail_forNewsletter@1324409e]" name="tearDown" is-config="true" duration-ms="746" started-at="2021-12-07T22:56:44Z" finished-at="2021-12-07T22:56:45Z">
+        </test-method> <!-- CheckGoogleLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="649" started-at="2021-12-08T21:26:15Z" finished-at="2021-12-08T21:26:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.AddEmail_forNewsletter@1324409e]" name="beforeMethod" is-config="true" duration-ms="13015" started-at="2021-12-07T22:56:45Z" finished-at="2021-12-07T22:56:58Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="9165" started-at="2021-12-08T21:26:16Z" finished-at="2021-12-08T21:26:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Add_SameEmailFor_News()[pri:2, instance:SanityTest.AddEmail_forNewsletter@1324409e]" name="Add_SameEmailFor_News" duration-ms="3757" started-at="2021-12-07T22:56:58Z" finished-at="2021-12-07T22:57:02Z">
+        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="2491" started-at="2021-12-08T21:26:25Z" finished-at="2021-12-08T21:26:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:969)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1148)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Add_SameEmailFor_News -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SanityTest.AddEmail_forNewsletter@1324409e]" name="tearDown" is-config="true" duration-ms="699" started-at="2021-12-07T22:57:02Z" finished-at="2021-12-07T22:57:02Z">
+        </test-method> <!-- CheckGoogleLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="667" started-at="2021-12-08T21:26:27Z" finished-at="2021-12-08T21:26:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="10128" started-at="2021-12-08T21:26:28Z" finished-at="2021-12-08T21:26:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="2501" started-at="2021-12-08T21:26:38Z" finished-at="2021-12-08T21:26:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:969)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1148)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckGoogleLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="683" started-at="2021-12-08T21:26:41Z" finished-at="2021-12-08T21:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="12870" started-at="2021-12-08T21:26:41Z" finished-at="2021-12-08T21:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="2708" started-at="2021-12-08T21:26:54Z" finished-at="2021-12-08T21:26:57Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:969)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1148)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckGoogleLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="689" started-at="2021-12-08T21:26:57Z" finished-at="2021-12-08T21:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

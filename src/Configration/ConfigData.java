@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -267,6 +269,16 @@ public class ConfigData implements ISuiteListener {
 		action.moveToElement(element).doubleClick().perform();
 	}
 	
+	public void SwitchToNewWindow()
+	{
+		Set <String> IDs = driver.getWindowHandles();
+		Iterator <String> it = IDs.iterator();
+		
+		it.next();
+		String Child = it.next();
+		
+		driver.switchTo().window(Child);
+	}
 	
 	
 }
