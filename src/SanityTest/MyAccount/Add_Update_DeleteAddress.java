@@ -34,7 +34,7 @@ public class Add_Update_DeleteAddress extends ConfigData {
 		teardown();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Login()
 	{
 		address.ClickOnSignin();
@@ -43,7 +43,7 @@ public class Add_Update_DeleteAddress extends ConfigData {
 		address.ClickOnSigninButton();
 	}
 	
-	@Test(priority=2, dependsOnMethods= {"Login"})
+	@Test(priority=2, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void AddNewAddress()
 	{
 		address.Open_MyAddress();
@@ -64,7 +64,7 @@ public class Add_Update_DeleteAddress extends ConfigData {
 		address.IsNewAddressAdded();
 	}
 	
-	@Test(priority=3, dependsOnMethods= {"AddNewAddress"})
+	@Test(priority=3, dependsOnMethods= {"AddNewAddress"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void UpdateAddress()
 	{
 		address.ClickOnUpdate();
@@ -74,7 +74,7 @@ public class Add_Update_DeleteAddress extends ConfigData {
 		address.ClickOnSave();
 	}
 	
-	@Test(priority=4, dependsOnMethods= {"UpdateAddress"})
+	@Test(priority=4, dependsOnMethods= {"UpdateAddress"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void DeleteAddress()
 	{
 		address.ClickOnDelete();

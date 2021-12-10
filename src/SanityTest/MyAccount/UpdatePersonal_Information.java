@@ -34,7 +34,7 @@ public class UpdatePersonal_Information extends ConfigData {
 		ReadData(); 
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Login()
 	{
 		Login.ClickOnSignin();
@@ -43,7 +43,7 @@ public class UpdatePersonal_Information extends ConfigData {
 		Login.ClickOnSigninButton();
 	}
 
-	@Test(priority = 2, dependsOnMethods= {"Login"})
+	@Test(priority = 2, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void UpdatePersonalnfo()
 	{
 		Update.ClickOnMyPersonalInfo();

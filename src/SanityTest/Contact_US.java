@@ -1,5 +1,6 @@
 package SanityTest;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,8 +21,14 @@ public class Contact_US extends ConfigData {
 		ReadData();
 	}
 	
+	@AfterMethod
+	public void afterMethod()
+	{
+		teardown();
+	}
 	
-	@Test
+	
+	@Test(retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Send_Message()
 	{
 		send.ClickOnContactUS();

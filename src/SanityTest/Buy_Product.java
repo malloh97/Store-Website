@@ -35,7 +35,7 @@ public class Buy_Product  extends ConfigData {
 		teardown();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void ChooseProduct()
 	{
 		Cart.ClickOn_WomenCategory();
@@ -50,14 +50,14 @@ public class Buy_Product  extends ConfigData {
 		Cart.ClickOnSecondProduct();
 	}
 	
-	@Test(priority=2, dependsOnMethods= {"ChooseProduct"})
+	@Test(priority=2, dependsOnMethods= {"ChooseProduct"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Summary()
 	{
 		Cart.Increase_Qty();
 		Cart.ClickOnProceedtoCheckout();
 	}
 	
-	@Test(priority=3, dependsOnMethods= {"Summary"})
+	@Test(priority=3, dependsOnMethods= {"Summary"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Signin()
 	{
 		Sign.CLickOn_SignIn();

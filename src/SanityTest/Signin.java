@@ -25,7 +25,7 @@ public class Signin extends ConfigData {
 		teardown();
 	}
 	
-	@Test
+	@Test(retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void SignIn()
 	{
 		Sign.CLickOn_SignIn();

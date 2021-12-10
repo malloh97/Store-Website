@@ -21,11 +21,11 @@ public class My_Wishlists extends ConfigData {
 		getDriver();
 	}
 	
-//	@AfterTest
-//	public void afterTest()
-//	{
-//		teardown();
-//	}
+	@AfterTest
+	public void afterTest()
+	{
+		teardown();
+	}
 	
 	@BeforeMethod
 	public void beforeMethod()
@@ -35,7 +35,7 @@ public class My_Wishlists extends ConfigData {
 		ReadData();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Login()
 	{
 		Login.ClickOnSignin();
@@ -44,7 +44,7 @@ public class My_Wishlists extends ConfigData {
 		Login.ClickOnSigninButton();
 	}
 	
-	@Test(priority=2, dependsOnMethods= {"Login"})
+	@Test(priority=2, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Create_Wishlist()
 	{
 		wish.ClickOnNameAccount();
@@ -53,7 +53,7 @@ public class My_Wishlists extends ConfigData {
 		wish.Save_Wishlist();
 	}
 	
-	@Test(priority=3,dependsOnMethods= {"Create_Wishlist"})
+	@Test(priority=3,dependsOnMethods= {"Create_Wishlist"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void AddProduct_toWishlist()
 	{
 		wish.BackToHome();
@@ -72,7 +72,7 @@ public class My_Wishlists extends ConfigData {
 	}
 	
 	
-	@Test(priority=4,dependsOnMethods= {"Create_Wishlist"})
+	@Test(priority=4,dependsOnMethods= {"Create_Wishlist"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void SendWithlist_toFriend()
 	{
 		wish.ClickOnSendThisWishlist();
@@ -80,7 +80,7 @@ public class My_Wishlists extends ConfigData {
 		wish.ClickOnSend();
 	}
 	
-	@Test(priority=5,dependsOnMethods= {"AddProduct_toWishlist"})
+	@Test(priority=5,dependsOnMethods= {"AddProduct_toWishlist"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void EditProduct_atWishlist()
 	{
 		wish.ClickToViewProduct();
@@ -90,7 +90,7 @@ public class My_Wishlists extends ConfigData {
 		wish.Save_Product();
 	}
 	
-	@Test(priority=6,dependsOnMethods= {"Create_Wishlist"}, enabled=false)
+	@Test(priority=6,dependsOnMethods= {"Create_Wishlist"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Delete_Wishlist()
 	{
 		wish.ClickOnDeleteArrow();

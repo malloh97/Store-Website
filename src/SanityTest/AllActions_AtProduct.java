@@ -34,7 +34,7 @@ public class AllActions_AtProduct extends ConfigData {
 		teardown();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Login()
 	{
 		Login.ClickOnSignin();
@@ -44,7 +44,7 @@ public class AllActions_AtProduct extends ConfigData {
 		Product.BackToHome();
 	}
 	
-	@Test(priority=2, dependsOnMethods= {"Login"})
+	@Test(priority=2, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void SearchForProduct()
 	{
 		Product.Fill_ProductName();
@@ -54,7 +54,7 @@ public class AllActions_AtProduct extends ConfigData {
 		Product.ClickOnProduct();
 	}
 	
-	@Test(priority=3, dependsOnMethods= {"Login"})
+	@Test(priority=3, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void WriteReviewOnProduct()
 	{
 		Product.ClickOnWriteReview();
@@ -63,7 +63,7 @@ public class AllActions_AtProduct extends ConfigData {
 		Product.ClickOnSend();
 	}
 	
-	@Test(priority=4, dependsOnMethods= {"Login"})
+	@Test(priority=4, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void SendProductToFriend()
 	{
 		Product.ClickOn_SendToFriend();
@@ -73,13 +73,13 @@ public class AllActions_AtProduct extends ConfigData {
 		
 	}
 	
-	@Test(priority=5, dependsOnMethods= {"Login"})
+	@Test(priority=5, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void AddProductToWishlist()
 	{
 		Product.clickOn_AddProduct_ToWishlist();
 	}
 	
-	@Test(priority=6, dependsOnMethods= {"Login"})
+	@Test(priority=6, dependsOnMethods= {"Login"}, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void AddProductToCart()
 	{
 		Product.IncreaseTheQuantity();

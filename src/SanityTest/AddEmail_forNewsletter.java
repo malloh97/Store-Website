@@ -35,7 +35,7 @@ public class AddEmail_forNewsletter extends ConfigData {
 		Email.CheckTheNotification();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, retryAnalyzer = listeners.RetryAnalyzer.class)
 	public void Add_SameEmailFor_News()
 	{
 		Email.ScrollToEmailField();

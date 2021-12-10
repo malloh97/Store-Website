@@ -1,17 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite]">
+  <test name="Contact_US">
     <classes>
       <class name="SanityTest.Contact_US"/>
+    </classes>
+  </test> <!-- Contact_US -->
+  <test name="Signin">
+    <classes>
       <class name="SanityTest.Signin"/>
+    </classes>
+  </test> <!-- Signin -->
+  <test name="CheckSocialMediaLinks">
+    <classes>
       <class name="SanityTest.CheckSocialMediaLinks"/>
+    </classes>
+  </test> <!-- CheckSocialMediaLinks -->
+  <test name="AllActions_AtProduct">
+    <classes>
       <class name="SanityTest.AllActions_AtProduct"/>
+    </classes>
+  </test> <!-- AllActions_AtProduct -->
+  <test name="Buy_Product">
+    <classes>
       <class name="SanityTest.Buy_Product"/>
+    </classes>
+  </test> <!-- Buy_Product -->
+  <test name="AddEmail_forNewsletter">
+    <classes>
       <class name="SanityTest.AddEmail_forNewsletter"/>
     </classes>
-  </test> <!-- Test -->
-  <test name="Test(failed)">
+  </test> <!-- AddEmail_forNewsletter -->
+  <test name="Add_Update_DeleteAddress">
+    <classes>
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress"/>
+    </classes>
+  </test> <!-- Add_Update_DeleteAddress -->
+  <test name="My_Wishlists">
+    <classes>
+      <class name="SanityTest.MyAccount.My_Wishlists"/>
+    </classes>
+  </test> <!-- My_Wishlists -->
+  <test name="UpdatePersonal_Information">
+    <classes>
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information"/>
+    </classes>
+  </test> <!-- UpdatePersonal_Information -->
+  <test name="Contact_US(failed)">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="Send_Message"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Buy_Product">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.MyAccount.My_Wishlists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+    </classes>
+  </test> <!-- Contact_US(failed) -->
+  <test name="Signin(failed)">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="SignIn"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.Buy_Product">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.MyAccount.My_Wishlists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+    </classes>
+  </test> <!-- Signin(failed) -->
+  <test name="CheckSocialMediaLinks(failed)">
     <classes>
       <class name="SanityTest.CheckSocialMediaLinks">
         <methods>
@@ -21,6 +182,149 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.Buy_Product">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.MyAccount.My_Wishlists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+    </classes>
+  </test> <!-- CheckSocialMediaLinks(failed) -->
+  <test name="AllActions_AtProduct(failed)">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.Buy_Product">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.MyAccount.My_Wishlists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <methods>
+          <include name="AddProductToCart"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="Login"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+    </classes>
+  </test> <!-- AllActions_AtProduct(failed) -->
+  <test name="Buy_Product(failed)">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
       <class name="SanityTest.Buy_Product">
         <methods>
           <include name="Summary"/>
@@ -34,16 +338,47 @@
           <include name="Address"/>
         </methods>
       </class> <!-- SanityTest.Buy_Product -->
-      <class name="SanityTest.Contact_US">
+      <class name="SanityTest.MyAccount.My_Wishlists">
         <methods>
-          <include name="Send_Message"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- SanityTest.Contact_US -->
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+    </classes>
+  </test> <!-- Buy_Product(failed) -->
+  <test name="AddEmail_forNewsletter(failed)">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
       <class name="SanityTest.Signin">
         <methods>
           <include name="beforeMethod"/>
-          <include name="SignIn"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- SanityTest.Signin -->
@@ -54,19 +389,180 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.Buy_Product">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.MyAccount.My_Wishlists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
       <class name="SanityTest.AllActions_AtProduct">
         <methods>
-          <include name="AddProductToWishlist"/>
-          <include name="AddProductToCart"/>
-          <include name="SendProductToFriend"/>
-          <include name="WriteReviewOnProduct"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+    </classes>
+  </test> <!-- AddEmail_forNewsletter(failed) -->
+  <test name="Add_Update_DeleteAddress(failed)">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.Buy_Product">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.MyAccount.My_Wishlists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
           <include name="Login"/>
-          <include name="SearchForProduct"/>
+          <include name="UpdateAddress"/>
+          <include name="DeleteAddress"/>
+          <include name="beforeTest"/>
+          <include name="AddNewAddress"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- SanityTest.AllActions_AtProduct -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Add_Update_DeleteAddress(failed) -->
+  <test name="My_Wishlists(failed)">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.Buy_Product">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.MyAccount.My_Wishlists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="Login"/>
+          <include name="Delete_Wishlist"/>
+          <include name="Create_Wishlist"/>
+          <include name="SendWithlist_toFriend"/>
+          <include name="beforeTest"/>
+          <include name="EditProduct_atWishlist"/>
+          <include name="AddProduct_toWishlist"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.My_Wishlists -->
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.UpdatePersonal_Information -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- SanityTest.MyAccount.Add_Update_DeleteAddress -->
+    </classes>
+  </test> <!-- My_Wishlists(failed) -->
+</suite> <!-- Failed suite [suite] -->
