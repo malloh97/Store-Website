@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [RetryFailedTests]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test">
     <classes>
       <class name="SanityTest.Contact_US"/>
@@ -13,26 +13,14 @@
   </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
-      <class name="SanityTest.Contact_US">
-        <methods>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- SanityTest.Contact_US -->
       <class name="SanityTest.CheckSocialMediaLinks">
         <methods>
+          <include name="CheckTwitterLink"/>
           <include name="afterMethod"/>
           <include name="CheckGoogleLink"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- SanityTest.CheckSocialMediaLinks -->
-      <class name="SanityTest.AddEmail_forNewsletter">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="Add_EmailFor_News"/>
-          <include name="Add_SameEmailFor_News"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- SanityTest.AddEmail_forNewsletter -->
       <class name="SanityTest.Buy_Product">
         <methods>
           <include name="Summary"/>
@@ -46,6 +34,26 @@
           <include name="Address"/>
         </methods>
       </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.Contact_US">
+        <methods>
+          <include name="Send_Message"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.Signin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="SignIn"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="Add_EmailFor_News"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
       <class name="SanityTest.AllActions_AtProduct">
         <methods>
           <include name="AddProductToWishlist"/>
@@ -59,13 +67,6 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- SanityTest.AllActions_AtProduct -->
-      <class name="SanityTest.Signin">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="SignIn"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- SanityTest.Signin -->
     </classes>
   </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [RetryFailedTests] -->
+</suite> <!-- Failed suite [Suite] -->

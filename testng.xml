@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="suite" preserve-order="true">
+
+  <test name="Contact_US">
+    <classes>
+      <class name="SanityTest.Contact_US"/>
+    </classes>
+    </test>
+     <test name="Signin">
+    <classes>
+      <class name="SanityTest.Signin"/>
+    </classes>
+    </test>
+    <test name="CheckSocialMediaLinks">
+    <classes>
+      <class name="SanityTest.CheckSocialMediaLinks"/>
+    </classes>
+    </test>
+      <test name="AllActions_AtProduct">
+    <classes>
+      <class name="SanityTest.AllActions_AtProduct"/>
+    </classes>
+    </test>
+      <test name="Buy_Product">
+    <classes>
+      <class name="SanityTest.Buy_Product"/>
+    </classes>
+    </test>
+      <test name="AddEmail_forNewsletter">
+    <classes>
+      <class name="SanityTest.AddEmail_forNewsletter"/>
+    </classes>
+    </test>
+     <test name="Add_Update_DeleteAddress">
+    <classes>
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress"/>
+    </classes>
+    </test>
+    <test name="My_Wishlists">
+    <classes>
+      <class name="SanityTest.MyAccount.My_Wishlists"/>
+    </classes>
+    </test>
+    <test name="UpdatePersonal_Information">
+    <classes>
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information"/>
+    </classes>
+    </test>
+      
+</suite> <!-- Suite -->

@@ -1,67 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" total="7" passed="3">
+<testng-results skipped="16" failed="4" total="24" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93920" started-at="2021-12-08T19:25:24Z" finished-at="2021-12-08T19:26:57Z">
+  <suite name="RetryFailedTests" duration-ms="388110" started-at="2021-12-10T17:16:55Z" finished-at="2021-12-10T17:23:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93920" started-at="2021-12-08T19:25:24Z" finished-at="2021-12-08T19:26:57Z">
-      <class name="SanityTest.CheckSocialMediaLinks">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="12507" started-at="2021-12-08T21:25:24Z" finished-at="2021-12-08T21:25:36Z">
+    <test name="Test" duration-ms="388110" started-at="2021-12-10T17:16:55Z" finished-at="2021-12-10T17:23:23Z">
+      <class name="SanityTest.AddEmail_forNewsletter">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="beforeMethod" is-config="true" duration-ms="13272" started-at="2021-12-10T19:22:05Z" finished-at="2021-12-10T19:22:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="CheckFaceBookLink()[pri:1, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckFaceBookLink" duration-ms="4200" started-at="2021-12-08T21:25:36Z" finished-at="2021-12-08T21:25:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckFaceBookLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="692" started-at="2021-12-08T21:25:40Z" finished-at="2021-12-08T21:25:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="6163" started-at="2021-12-08T21:25:41Z" finished-at="2021-12-08T21:25:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="CheckTwitterLink()[pri:2, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckTwitterLink" duration-ms="3625" started-at="2021-12-08T21:25:47Z" finished-at="2021-12-08T21:25:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckTwitterLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="657" started-at="2021-12-08T21:25:51Z" finished-at="2021-12-08T21:25:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="7019" started-at="2021-12-08T21:25:51Z" finished-at="2021-12-08T21:25:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="CheckYoutubeLink()[pri:3, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckYoutubeLink" duration-ms="3713" started-at="2021-12-08T21:25:58Z" finished-at="2021-12-08T21:26:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckYoutubeLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="661" started-at="2021-12-08T21:26:02Z" finished-at="2021-12-08T21:26:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="9082" started-at="2021-12-08T21:26:03Z" finished-at="2021-12-08T21:26:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="3042" started-at="2021-12-08T21:26:12Z" finished-at="2021-12-08T21:26:15Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="SKIP" signature="Add_EmailFor_News()[pri:1, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="Add_EmailFor_News" duration-ms="60408" started-at="2021-12-10T19:22:19Z" finished-at="2021-12-10T19:23:19Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(@class, 'alert alert-success')]"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be5071e1554d8273588e2ede0176dbb1, findElement {using=xpath, value=//p[contains(@class, 'alert alert-success')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50316/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: be5071e1554d8273588e2ede0176dbb1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
-	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:58)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(@class, 'alert alert-success')]"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be5071e1554d8273588e2ede0176dbb1, findElement {using=xpath, value=//p[contains(@class, 'alert alert-success')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50316/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: be5071e1554d8273588e2ede0176dbb1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at PageObjectModel.AddEmail_forNewsletter_PO.CheckTheNotification(AddEmail_forNewsletter_PO.java:31)
+	at SanityTest.AddEmail_forNewsletter.Add_EmailFor_News(AddEmail_forNewsletter.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -88,19 +77,759 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckGoogleLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="649" started-at="2021-12-08T21:26:15Z" finished-at="2021-12-08T21:26:16Z">
+        </test-method> <!-- Add_EmailFor_News -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="tearDown" is-config="true" duration-ms="717" started-at="2021-12-10T19:23:19Z" finished-at="2021-12-10T19:23:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="9165" started-at="2021-12-08T21:26:16Z" finished-at="2021-12-08T21:26:25Z">
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-10T19:23:20Z" finished-at="2021-12-10T19:23:20Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [871774d978b10225e8b7a41abf75a35e, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50369/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 871774d978b10225e8b7a41abf75a35e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [871774d978b10225e8b7a41abf75a35e, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50369/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 871774d978b10225e8b7a41abf75a35e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at Configration.ConfigData.getDriver(ConfigData.java:49)
+	at SanityTest.AddEmail_forNewsletter.beforeMethod(AddEmail_forNewsletter.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:969)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1148)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="2491" started-at="2021-12-08T21:26:25Z" finished-at="2021-12-08T21:26:27Z">
+        <test-method status="SKIP" signature="Add_EmailFor_News()[pri:1, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="Add_EmailFor_News" duration-ms="1" started-at="2021-12-10T19:23:23Z" finished-at="2021-12-10T19:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_EmailFor_News -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-12-10T19:23:23Z" finished-at="2021-12-10T19:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-10T19:23:23Z" finished-at="2021-12-10T19:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="Add_SameEmailFor_News()[pri:2, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="Add_SameEmailFor_News" duration-ms="0" started-at="2021-12-10T19:23:23Z" finished-at="2021-12-10T19:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_SameEmailFor_News -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:SanityTest.AddEmail_forNewsletter@6be46e8f]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-12-10T19:23:23Z" finished-at="2021-12-10T19:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SanityTest.AddEmail_forNewsletter -->
+      <class name="SanityTest.Signin">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.Signin@614c5515]" name="beforeMethod" is-config="true" duration-ms="11264" started-at="2021-12-10T19:17:56Z" finished-at="2021-12-10T19:18:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="SignIn()[pri:0, instance:SanityTest.Signin@614c5515]" name="SignIn" duration-ms="73433" started-at="2021-12-10T19:18:08Z" finished-at="2021-12-10T19:19:21Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7bc0fa5616dc3f551c2b3d856eb80450, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49899}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49899/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7bc0fa5616dc3f551c2b3d856eb80450]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7bc0fa5616dc3f551c2b3d856eb80450, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49899}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49899/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7bc0fa5616dc3f551c2b3d856eb80450
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Configration.ConfigData.ClickOnBy_Id(ConfigData.java:61)
+	at PageObjectModel.Signin_PO.Fill_Title(Signin_PO.java:36)
+	at SanityTest.Signin.SignIn(Signin.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.Signin@614c5515]" name="afterMethod" is-config="true" duration-ms="790" started-at="2021-12-10T19:19:21Z" finished-at="2021-12-10T19:19:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- SanityTest.Signin -->
+      <class name="SanityTest.Contact_US">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.Contact_US@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="14240" started-at="2021-12-10T19:17:26Z" finished-at="2021-12-10T19:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Send_Message()[pri:0, instance:SanityTest.Contact_US@6fb554cc]" name="Send_Message" duration-ms="16527" started-at="2021-12-10T19:17:40Z" finished-at="2021-12-10T19:17:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Send_Message -->
+      </class> <!-- SanityTest.Contact_US -->
+      <class name="SanityTest.AllActions_AtProduct">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="beforeTest" is-config="true" duration-ms="17184" started-at="2021-12-10T19:16:55Z" finished-at="2021-12-10T19:17:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SanityTest.Buy_Product@4cb2c100]" name="beforeTest" is-config="true" duration-ms="13181" started-at="2021-12-10T19:17:12Z" finished-at="2021-12-10T19:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2021-12-10T19:22:05Z" finished-at="2021-12-10T19:22:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="Login()[pri:1, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="Login" duration-ms="2" started-at="2021-12-10T19:22:05Z" finished-at="2021-12-10T19:22:05Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[contains(@class,'login')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50267/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[contains(@class,'login')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50267/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Configration.ConfigData.ClickOnBy_Xpath(ConfigData.java:97)
+	at PageObjectModel.MyAccount.Add_Update_DeleteAddress_PO.ClickOnSignin(Add_Update_DeleteAddress_PO.java:23)
+	at SanityTest.AllActions_AtProduct.Login(AllActions_AtProduct.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="SKIP" signature="SearchForProduct()[pri:2, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="SearchForProduct" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.AllActions_AtProduct.Login" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AllActions_AtProduct.SearchForProduct()[pri:2, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AllActions_AtProduct.SearchForProduct()[pri:2, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchForProduct -->
+        <test-method status="SKIP" signature="WriteReviewOnProduct()[pri:3, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="WriteReviewOnProduct" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.AllActions_AtProduct.Login" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AllActions_AtProduct.WriteReviewOnProduct()[pri:3, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AllActions_AtProduct.WriteReviewOnProduct()[pri:3, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteReviewOnProduct -->
+        <test-method status="SKIP" signature="SendProductToFriend()[pri:4, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="SendProductToFriend" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.AllActions_AtProduct.Login" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AllActions_AtProduct.SendProductToFriend()[pri:4, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AllActions_AtProduct.SendProductToFriend()[pri:4, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendProductToFriend -->
+        <test-method status="SKIP" signature="AddProductToWishlist()[pri:5, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="AddProductToWishlist" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.AllActions_AtProduct.Login" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AllActions_AtProduct.AddProductToWishlist()[pri:5, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AllActions_AtProduct.AddProductToWishlist()[pri:5, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToWishlist -->
+        <test-method status="SKIP" signature="AddProductToCart()[pri:6, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="AddProductToCart" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.AllActions_AtProduct.Login" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AllActions_AtProduct.AddProductToCart()[pri:6, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AllActions_AtProduct.AddProductToCart()[pri:6, instance:SanityTest.AllActions_AtProduct@3f2a3a5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCart -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:SanityTest.AllActions_AtProduct@3f2a3a5]" name="afterTest" is-config="true" duration-ms="648" started-at="2021-12-10T19:23:23Z" finished-at="2021-12-10T19:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:SanityTest.Buy_Product@4cb2c100]" name="afterTest" is-config="true" duration-ms="2" started-at="2021-12-10T19:23:23Z" finished-at="2021-12-10T19:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- SanityTest.AllActions_AtProduct -->
+      <class name="SanityTest.Buy_Product">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.Buy_Product@4cb2c100]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2021-12-10T19:22:05Z" finished-at="2021-12-10T19:22:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="ChooseProduct()[pri:1, instance:SanityTest.Buy_Product@4cb2c100]" name="ChooseProduct" duration-ms="3" started-at="2021-12-10T19:22:05Z" finished-at="2021-12-10T19:22:05Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[@title='Women']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50267/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[@title='Women']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50267/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Configration.ConfigData.ClickOnBy_Xpath(ConfigData.java:97)
+	at PageObjectModel.Buy_Product_PO.ClickOn_WomenCategory(Buy_Product_PO.java:15)
+	at SanityTest.Buy_Product.ChooseProduct(Buy_Product.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChooseProduct -->
+        <test-method status="SKIP" signature="Summary()[pri:2, instance:SanityTest.Buy_Product@4cb2c100]" name="Summary" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.Buy_Product.ChooseProduct" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buy_Product.Summary()[pri:2, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buy_Product.Summary()[pri:2, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Summary -->
+        <test-method status="SKIP" signature="Signin()[pri:3, instance:SanityTest.Buy_Product@4cb2c100]" name="Signin" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.Buy_Product.Summary" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buy_Product.Signin()[pri:3, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buy_Product.Signin()[pri:3, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signin -->
+        <test-method status="SKIP" signature="Address()[pri:4, instance:SanityTest.Buy_Product@4cb2c100]" name="Address" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.Buy_Product.Signin" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buy_Product.Address()[pri:4, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buy_Product.Address()[pri:4, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Address -->
+        <test-method status="SKIP" signature="Shipping()[pri:5, instance:SanityTest.Buy_Product@4cb2c100]" name="Shipping" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.Buy_Product.Address" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buy_Product.Shipping()[pri:5, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buy_Product.Shipping()[pri:5, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Shipping -->
+        <test-method status="SKIP" signature="Payment()[pri:6, instance:SanityTest.Buy_Product@4cb2c100]" name="Payment" duration-ms="0" started-at="2021-12-10T19:22:05Z" depends-on-methods="SanityTest.Buy_Product.Shipping" finished-at="2021-12-10T19:22:05Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Buy_Product.Payment()[pri:6, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Buy_Product.Payment()[pri:6, instance:SanityTest.Buy_Product@4cb2c100] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Payment -->
+      </class> <!-- SanityTest.Buy_Product -->
+      <class name="SanityTest.CheckSocialMediaLinks">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="beforeMethod" is-config="true" duration-ms="14760" started-at="2021-12-10T19:19:22Z" finished-at="2021-12-10T19:19:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CheckFaceBookLink()[pri:1, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="CheckFaceBookLink" duration-ms="3308" started-at="2021-12-10T19:19:37Z" finished-at="2021-12-10T19:19:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckFaceBookLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="afterMethod" is-config="true" duration-ms="651" started-at="2021-12-10T19:19:40Z" finished-at="2021-12-10T19:19:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="beforeMethod" is-config="true" duration-ms="12374" started-at="2021-12-10T19:19:41Z" finished-at="2021-12-10T19:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CheckTwitterLink()[pri:2, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="CheckTwitterLink" duration-ms="4098" started-at="2021-12-10T19:19:53Z" finished-at="2021-12-10T19:19:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTwitterLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="afterMethod" is-config="true" duration-ms="712" started-at="2021-12-10T19:19:57Z" finished-at="2021-12-10T19:19:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="beforeMethod" is-config="true" duration-ms="14578" started-at="2021-12-10T19:19:58Z" finished-at="2021-12-10T19:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CheckYoutubeLink()[pri:3, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="CheckYoutubeLink" duration-ms="4500" started-at="2021-12-10T19:20:12Z" finished-at="2021-12-10T19:20:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckYoutubeLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="afterMethod" is-config="true" duration-ms="695" started-at="2021-12-10T19:20:17Z" finished-at="2021-12-10T19:20:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="beforeMethod" is-config="true" duration-ms="2156" started-at="2021-12-10T19:20:18Z" finished-at="2021-12-10T19:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="CheckGoogleLink" duration-ms="60021" started-at="2021-12-10T19:20:20Z" finished-at="2021-12-10T19:21:20Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#social_block"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2347e283c36a152c140d6b9cfeabdc7, findElement {using=id, value=social_block}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50132/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2347e283c36a152c140d6b9cfeabdc7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#social_block"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'AHMADMALLOH', ip: '192.168.100.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2347e283c36a152c140d6b9cfeabdc7, findElement {using=id, value=social_block}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50132/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2347e283c36a152c140d6b9cfeabdc7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at PageObjectModel.CheckSocialMediaLinks_PO.ScrollInto_SocialMediaLinks(CheckSocialMediaLinks_PO.java:15)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckGoogleLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="afterMethod" is-config="true" duration-ms="754" started-at="2021-12-10T19:21:20Z" finished-at="2021-12-10T19:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="beforeMethod" is-config="true" duration-ms="11025" started-at="2021-12-10T19:21:21Z" finished-at="2021-12-10T19:21:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="CheckGoogleLink" duration-ms="2391" started-at="2021-12-10T19:21:32Z" finished-at="2021-12-10T19:21:34Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
@@ -145,15 +874,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckGoogleLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="667" started-at="2021-12-08T21:26:27Z" finished-at="2021-12-08T21:26:28Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="afterMethod" is-config="true" duration-ms="662" started-at="2021-12-10T19:21:34Z" finished-at="2021-12-10T19:21:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="10128" started-at="2021-12-08T21:26:28Z" finished-at="2021-12-08T21:26:38Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="beforeMethod" is-config="true" duration-ms="11489" started-at="2021-12-10T19:21:35Z" finished-at="2021-12-10T19:21:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="2501" started-at="2021-12-08T21:26:38Z" finished-at="2021-12-08T21:26:41Z">
+        <test-method status="SKIP" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="CheckGoogleLink" duration-ms="2518" started-at="2021-12-10T19:21:46Z" finished-at="2021-12-10T19:21:49Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
@@ -198,15 +927,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckGoogleLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="683" started-at="2021-12-08T21:26:41Z" finished-at="2021-12-08T21:26:41Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="afterMethod" is-config="true" duration-ms="707" started-at="2021-12-10T19:21:49Z" finished-at="2021-12-10T19:21:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="beforeMethod" is-config="true" duration-ms="12870" started-at="2021-12-08T21:26:41Z" finished-at="2021-12-08T21:26:54Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="beforeMethod" is-config="true" duration-ms="12005" started-at="2021-12-10T19:21:49Z" finished-at="2021-12-10T19:22:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="CheckGoogleLink" duration-ms="2708" started-at="2021-12-08T21:26:54Z" finished-at="2021-12-08T21:26:57Z">
+        <test-method status="FAIL" signature="CheckGoogleLink()[pri:4, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="CheckGoogleLink" duration-ms="2758" started-at="2021-12-10T19:22:01Z" finished-at="2021-12-10T19:22:04Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
@@ -251,11 +980,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckGoogleLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@180bc464]" name="afterMethod" is-config="true" duration-ms="689" started-at="2021-12-08T21:26:57Z" finished-at="2021-12-08T21:26:57Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SanityTest.CheckSocialMediaLinks@77b52d12]" name="afterMethod" is-config="true" duration-ms="1135" started-at="2021-12-10T19:22:04Z" finished-at="2021-12-10T19:22:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- SanityTest.CheckSocialMediaLinks -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- RetryFailedTests -->
 </testng-results>
