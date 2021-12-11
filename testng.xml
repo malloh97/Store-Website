@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="suite" preserve-order="true">
+<parameter name="Browser" value="chrome"/>
 
   <test name="Contact_US">
     <classes>

@@ -2,6 +2,7 @@ package SanityTest;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Configration.ConfigData;
@@ -11,13 +12,15 @@ import PageObjectModel.Contact_US_PO;
 public class Contact_US extends ConfigData {
 	
 	Contact_US_PO send; 
+	String Broswer = "ahmad";
 	
 	
 	@BeforeMethod
+	@Parameters({"Browser"})
 	public void beforeMethod()
 	{
 		send = new Contact_US_PO();
-		getDriver();
+		getDriver(Broswer);
 		ReadData();
 	}
 	

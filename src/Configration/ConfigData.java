@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -35,18 +36,33 @@ public class ConfigData implements ISuiteListener {
 	
 
 	@SuppressWarnings("deprecation")
-	public static void getDriver()
+	public static void getDriver(String Browser)
 	{
-		WebDriverManager.chromedriver().setup();
+		if (Browser.equalsIgnoreCase("chrome"))
+		{
+			
+		    WebDriverManager.chromedriver().setup();
 		
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--incognito"); 
-		driver  = new ChromeDriver(options); 
+		    ChromeOptions options = new ChromeOptions();
+		    options.addArguments("--incognito"); 
+		    driver  = new ChromeDriver(options); 
 		
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.get("http://automationpractice.com/index.php");
+		    driver.manage().window().maximize();
+		    driver.manage().deleteAllCookies();
+		    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		    driver.get("http://automationpractice.com/index.php");
+		}
+		else if (Browser.equalsIgnoreCase("firefox"))
+		{
+			WebDriverManager.firefoxdriver().setup();
+			
+			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.get("http://automationpractice.com/index.php");
+			
+		}
 		
 	}
 	

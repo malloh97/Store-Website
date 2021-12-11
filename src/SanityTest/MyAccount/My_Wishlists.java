@@ -4,6 +4,7 @@ package SanityTest.MyAccount;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Configration.ConfigData;
@@ -16,9 +17,10 @@ public class My_Wishlists extends ConfigData {
 	My_Wishlists_PO wish;
 	
 	@BeforeTest
-	public void beforeTest()
+	@Parameters({"Browser"})
+	public void beforeTest(String Browser)
 	{
-		getDriver();
+		getDriver(Browser);
 	}
 	
 	@AfterTest

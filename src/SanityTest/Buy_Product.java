@@ -4,6 +4,7 @@ package SanityTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Configration.ConfigData;
@@ -16,9 +17,10 @@ public class Buy_Product  extends ConfigData {
 	Signin_PO Sign; 
 	
 	@BeforeTest
-	public void beforeTest()
+	@Parameters({"Browser"})
+	public void beforeTest(String Browser)
 	{
-		getDriver();
+		getDriver(Browser);
 	}
 	
 	@BeforeMethod

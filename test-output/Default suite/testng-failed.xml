@@ -3,18 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="SanityTest.CheckSocialMediaLinks"/>
+      <class name="SanityTest.Contact_US"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="SanityTest.CheckSocialMediaLinks">
+      <class name="SanityTest.Contact_US">
         <methods>
-          <include name="afterMethod"/>
-          <include name="CheckGoogleLink"/>
+          <include name="Send_Message"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- SanityTest.CheckSocialMediaLinks -->
+      </class> <!-- SanityTest.Contact_US -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

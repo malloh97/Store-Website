@@ -2,6 +2,7 @@ package SanityTest;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Configration.ConfigData;
@@ -13,10 +14,11 @@ public class CheckSocialMediaLinks extends ConfigData {
 	CheckSocialMediaLinks_PO Social;
 	
 	@BeforeMethod
-	public void beforeMethod()
+	@Parameters({"Browser"})
+	public void beforeMethod(String Browser)
 	{
 		Social = new CheckSocialMediaLinks_PO();
-		getDriver();
+		getDriver(Browser);
 		ReadData();
 	}
 	
