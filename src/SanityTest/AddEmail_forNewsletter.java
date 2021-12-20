@@ -13,8 +13,9 @@ public class AddEmail_forNewsletter extends ConfigData {
 	AddEmail_forNewsletter_PO Email; 
 	
 	
-	@BeforeMethod
+	
 	@Parameters({"Browser"})
+	@BeforeMethod
 	public void beforeMethod(String Browser)
 	{
 		Email = new AddEmail_forNewsletter_PO();

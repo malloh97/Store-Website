@@ -21,7 +21,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ISuiteListener;
-import org.testng.ITestResult;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -32,10 +33,8 @@ public class ConfigData implements ISuiteListener {
 	static FileInputStream fileInput; 
 	protected static Properties prop; 
 	
-	
-	
-
-	@SuppressWarnings("deprecation")
+	@Parameters("Browser")
+	@Test
 	public static void getDriver(String Browser)
 	{
 		if (Browser.equalsIgnoreCase("chrome"))
@@ -46,26 +45,21 @@ public class ConfigData implements ISuiteListener {
 		    ChromeOptions options = new ChromeOptions();
 		    options.addArguments("--incognito"); 
 		    driver  = new ChromeDriver(options); 
-		
-		    driver.manage().window().maximize();
-		    driver.manage().deleteAllCookies();
-		    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		    driver.get("http://automationpractice.com/index.php");
+		    
+		    
 		}
 		else if (Browser.equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			
 			driver = new FirefoxDriver();
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.get("http://automationpractice.com/index.php");
-			
 		}
 		
+		driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
+	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	    driver.get("http://automationpractice.com/index.php");
 	}
-	
 	
 	public void teardown()
 	{
@@ -295,6 +289,16 @@ public class ConfigData implements ISuiteListener {
 		
 		driver.switchTo().window(Child);
 	}
+	
+	/*
+	 * 
+	 *    Configuration for Extant Report 
+	 * 
+	 */
+	
+	
+	
+	
 	
 	
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CheckSocialMediaLinks</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 11 20:21:25 EET 2021</td>
+<td>Started on:</td><td>Mon Dec 20 22:38:30 EET 2021</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29277 ms)</td>
+<tr><td>Total time:</td><td>104 seconds (104780 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,201 +68,27 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SanityTest.CheckSocialMediaLinks.afterMethod()'><b>afterMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;AHMADMALLOH&apos;, ip: &apos;192.168.100.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8d8182ee-a459-4e1f-afa9-78afda4e8520, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:56667, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15372, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56667/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8d8182ee-a459-4e1f-afa9-78afda4e8520
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace762604772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace762604772'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;AHMADMALLOH&apos;, ip: &apos;192.168.100.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8d8182ee-a459-4e1f-afa9-78afda4e8520, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:56667, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15372, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56667/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8d8182ee-a459-4e1f-afa9-78afda4e8520
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.beforeMethod()'><b>beforeMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.beforeMethod()'><b>beforeMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.beforeMethod()'><b>beforeMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.beforeMethod()'><b>beforeMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.afterMethod()'><b>afterMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.afterMethod()'><b>afterMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.afterMethod()'><b>afterMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.afterMethod()'><b>afterMethod</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.CheckFaceBookLink()'><b>CheckFaceBookLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td><div><pre>java.lang.AssertionError: expected [https://web.facebook.com/groups/525066904174158/?_rdc=1&amp;_rdr] but found [about:blank]
-	at PageObjectModel.CheckSocialMediaLinks_PO.IsFaceBookOpened(CheckSocialMediaLinks_PO.java:38)
-	at SanityTest.CheckSocialMediaLinks.CheckFaceBookLink(CheckSocialMediaLinks.java:36)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace211199210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace211199210'><pre>java.lang.AssertionError: expected [https://web.facebook.com/groups/525066904174158/?_rdc=1&amp;_rdr] but found [about:blank]
+<td title='SanityTest.CheckSocialMediaLinks.CheckGoogleLink()'><b>CheckGoogleLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
+<td><div><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1854922009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1854922009'><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at PageObjectModel.CheckSocialMediaLinks_PO.IsFaceBookOpened(CheckSocialMediaLinks_PO.java:38)
-	at SanityTest.CheckSocialMediaLinks.CheckFaceBookLink(CheckSocialMediaLinks.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.CheckFaceBookLink()'><b>CheckFaceBookLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;AHMADMALLOH&apos;, ip: &apos;192.168.100.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8d8182ee-a459-4e1f-afa9-78afda4e8520, findElement {using=id, value=social_block}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:56667, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15372, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56667/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8d8182ee-a459-4e1f-afa9-78afda4e8520
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at PageObjectModel.CheckSocialMediaLinks_PO.ScrollInto_SocialMediaLinks(CheckSocialMediaLinks_PO.java:15)
-	at SanityTest.CheckSocialMediaLinks.CheckFaceBookLink(CheckSocialMediaLinks.java:34)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace628933116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace628933116'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;AHMADMALLOH&apos;, ip: &apos;192.168.100.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8d8182ee-a459-4e1f-afa9-78afda4e8520, findElement {using=id, value=social_block}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:56667, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15372, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56667/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8d8182ee-a459-4e1f-afa9-78afda4e8520
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at PageObjectModel.CheckSocialMediaLinks_PO.ScrollInto_SocialMediaLinks(CheckSocialMediaLinks_PO.java:15)
-	at SanityTest.CheckSocialMediaLinks.CheckFaceBookLink(CheckSocialMediaLinks.java:34)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -288,28 +114,170 @@ Session ID: 8d8182ee-a459-4e1f-afa9-78afda4e8520
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
+<td>3</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='SanityTest.CheckSocialMediaLinks.CheckFaceBookLink()'><b>CheckFaceBookLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
 <td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
-<tr>
-<td title='SanityTest.CheckSocialMediaLinks.CheckGoogleLink()'><b>CheckGoogleLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
-<td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
+<td>4</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
 <tr>
 <td title='SanityTest.CheckSocialMediaLinks.CheckTwitterLink()'><b>CheckTwitterLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
 <td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
+<td>3</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
 <tr>
 <td title='SanityTest.CheckSocialMediaLinks.CheckYoutubeLink()'><b>CheckYoutubeLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
 <td></td>
-<td>0</td>
-<td>SanityTest.CheckSocialMediaLinks@3551a94</td></tr>
+<td>5</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
+<tr>
+<td title='SanityTest.CheckSocialMediaLinks.getDriver()'><b>getDriver</b><br>Test class: SanityTest.CheckSocialMediaLinks<br>Parameters: chrome</td>
+<td></td>
+<td>7</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SanityTest.CheckSocialMediaLinks.CheckGoogleLink()'><b>CheckGoogleLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
+<td><div><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340792090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace340792090'><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>4</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
+<tr>
+<td title='SanityTest.CheckSocialMediaLinks.CheckGoogleLink()'><b>CheckGoogleLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
+<td><div><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1368391951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1368391951'><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:969)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1148)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>3</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
+<tr>
+<td title='SanityTest.CheckSocialMediaLinks.CheckGoogleLink()'><b>CheckGoogleLink</b><br>Test class: SanityTest.CheckSocialMediaLinks</td>
+<td><div><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace37528429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace37528429'><pre>java.lang.AssertionError: expected [https://plus.google.com/111979135243110831526/posts] but found [https://accounts.google.com/signin/v2/identifier?passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;followup=https%3A%2F%2Fplus.google.com%2F111979135243110831526%2Fposts&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at PageObjectModel.CheckSocialMediaLinks_PO.IsGoogleOpened(CheckSocialMediaLinks_PO.java:105)
+	at SanityTest.CheckSocialMediaLinks.CheckGoogleLink(CheckSocialMediaLinks.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:969)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1148)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>3</td>
+<td>SanityTest.CheckSocialMediaLinks@26f67b76</td></tr>
 </table><p>
 </body>
 </html>

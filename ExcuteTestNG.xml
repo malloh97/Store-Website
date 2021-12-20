@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests" thread-count="2" preserve-order="true">
+
+  <test name="Run the Test Classes on Chrome">
+  <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="SanityTest.Contact_US"/>
+      <class name="SanityTest.Signin"/>
+      <class name="SanityTest.CheckSocialMediaLinks"/>
+      <class name="SanityTest.AllActions_AtProduct"/>
+      <class name="SanityTest.Buy_Product"/>
+      <class name="SanityTest.AddEmail_forNewsletter"/>
+      <class name="SanityTest.MyAccount.UpdatePersonal_Information"/>
+      <class name="SanityTest.MyAccount.My_Wishlists"/>
+      <class name="SanityTest.MyAccount.Add_Update_DeleteAddress"/>
+    </classes>
+  </test>
+  
+  <test name="Run the Test Classes on Firfox">
+  <parameter name="Browser" value="firefox"></parameter>
+    <classes>
+      <class name="SanityTest.Contact_US"/>
+      <class name="SanityTest.Signin"/>
+      <class name="SanityTest.CheckSocialMediaLinks"/>
+      <class name="SanityTest.AllActions_AtProduct"/>
+      <class name="SanityTest.Buy_Product"/>
+      <class name="SanityTest.AddEmail_forNewsletter"/>
+      <class name="SanityTest.UpdatePersonal_Information"/>
+      <class name="SanityTest.My_Wishlists"/>
+      <class name="SanityTest.Add_Update_DeleteAddress"/>
+    </classes>
+  </test> 
+</suite> 
